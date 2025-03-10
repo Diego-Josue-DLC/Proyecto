@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CeraVe | Indice UV</title>
+    <link rel="stylesheet" href="SobreNosotros.css">
+    <link rel="icon" type="imagen/png"    href="img/Latam_cerave_header_logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header id=".">
+        <a href="#" class="menu"><img src="img/menu.png" alt="menu"></a>
+        <a href="index.html" class="logo"><img src="img/cerave.jpeg" alt="ceraVE"></a>
+        <a href="#." class="button">CONTÁCTANOS</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Rayos UV</a></li>
+            <li><a href="salud.html">Efectos en la Salud</a></li>
+            <li><a href="Protección.html">Protección UV</a></li>
+            <li><a href="indice.html">Índice UV</a></li>
+            <li><a href="AlertraUV.html">Alerta UV</a></li>
+        </ul>
+    </nav>
+    
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Rayos UV</a></li>
+                <li><a href="salud.html">Efectos en la Salud</a></li>
+                <li><a href="Protección.html">Protección UV</a></li>
+                <li><a href="indice.html">Índice UV</a></li>
+                <li><a href="AlertraUV.html">Alerta UV</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+
+    <script>
+        let lastScroll = 0;
+        window.addEventListener("scroll", function () {
+            let navbar = document.querySelector(".navbar");
+            let currentScroll = window.pageYOffset;
+
+            if (currentScroll > 60) {                                   // Solo aparece después de bajar 60px //
+                navbar.classList.add("show");
+            } 
+            else {
+                navbar.classList.remove("show");
+            }
+        });
+    </script>
+
+
+    <div class="inicio" id="Inicio">
+        <h1>Deja tu comentario</h1>
+    </div>
+    
+
+
+    <div class="coment">
+        <div class="container">
+            <form action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+    
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </div>
+        <img src="img/360_F_995816531_YFdd9WONUcjdVB43DUp1o3VdkBw1Nnjc.jpg" alt="img">
+    </div>
+
+
+
+    <div class="sub">
+        <h1>SOBRE NOSOTROS</h1>
+    </div>
+    <!-- Carrusel -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="DOE">
+                    <h1>"En CeraVE, creemos en la importancia de la innovación y la accesibilidad. Estamos aquí para proporcionarte una plataforma eficiente y fácil de usar, adaptada a tus necesidades.".</h1>
+                    <img src="img/Cristian.jpeg" alt="Iris DOE">
+                    <h2>MILACHAY ESPINOZA, CRISTIAN JESUS</h2>
+                    <p>Grupo 4</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="DOE">
+                    <h1>"En CeraVE, nos esforzamos por ofrecerte contenido de calidad y una experiencia intuitiva. Estamos aquí para asegurarnos de que encuentres lo que necesitas de manera rápida y sencilla.".</h1>
+                    <img src="img/Diego.jpeg" alt="Iris DOE">
+                    <h2>DE LA CRUZ CANO, DIEGO JOSUE</h2>
+                    <p>Grupo 4</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="DOE">
+                    <h1>"En CeraVE, trabajamos cada día para mejorar y brindarte las mejores herramientas a tu alcance. Nuestro objetivo es hacer que tu visita sea productiva y satisfactoria.".</h1>
+                    <img src="img/Andres.jpeg" alt="Iris DOE">
+                    <h2>RAMIREZ CALDERON, VICTOR ANDRES</h2>
+                    <p>Grupo 4</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="DOE">
+                    <h1>"En CeraVE, trabajamos para brindarte la mejor experiencia en nuestra plataforma. Estamos aquí para ayudarte a encontrar lo que buscas y hacer tu navegación más fácil y rápida. 🚀".</h1>
+                    <img src="img/Elvis.jpeg" alt="Iris DOE">
+                    <h2>QUINCHO VERA, ELVIS ALIN</h2>
+                    <p>Grupo 4</p>
+                </div>
+            </div>
+        </div>
+        <!-- Botones de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Script de Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <footer>
+        <div class="footer">
+            <div class="logo-footer">
+                <a href="#index.html"><img src="img/cerave_footer_logo1.svg" alt="ceraVE"></a>
+            </div>
+            <div class="contactanos">
+                <a href="SobreNosotros.html"><img src="img/email (1).png" alt="">Contáctanos</a>
+            </div>
+            <h6>© 2025 Protección UV. <br>Todos los derechos reservados.</h6>
+            <div class="links">
+                <a href="https://www.facebook.com/CeravePeru?u=" target="_blank"><img src="img/facebook (1).png" alt=""></a>
+                <a href="https://www.instagram.com/ceraveperu/?hl=es" target="_blank"><img src="img/instagram (1).png" alt=""></a>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <ul>
+                <li><a href="index.html">Rayos UV</a></li>
+                <li><a href="salud.html">Efectos en la Salud</a></li>
+                <li><a href="Protección.html">Protección UV</a></li>
+                <li><a href="indice.html">Índice UV</a></li>
+                <li><a href="AlertraUV.html">Alerta UV</a></li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>
